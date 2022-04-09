@@ -1,4 +1,5 @@
 // import { products,projects } from './products.js';
+
 var products = [
     { id: 1, name: "A central ", desc: "BARADOURA, Products",class:"baradoura", img: "assets/images/1.jpg" },
     { id: 3, name: "A central curvature", desc: "BARADOURA, Products", class:"interlock", img: "assets/images/3.jpg" },
@@ -23,9 +24,7 @@ var projects = [
     { id: 8, name: "A central curvature", img: "assets/images/p7.jpg" }
 ]
 
-var pageIds = localStorage.getItem("namePage");
-console.log("#"+pageIds);
-$("#"+pageIds).addClass('activetion').siblings().removeClass('activetion');
+
 
 
 $(function () {
@@ -58,7 +57,6 @@ $(function () {
         } else {
 
             $('.shuffle-images .col-md-3').css('display', 'none');
-            console.log($(this).data('class'))
             $($(this).data('class')).parent().css('display', 'block');
         }
     });
@@ -101,7 +99,6 @@ document.getElementById('listOfProduct').innerHTML = container;
 
 
 function openImg(id) {
-    console.log('ffffffffffffff')
     $('#exampleModalLabel').text(products[id].name);
     $('#show-img').attr('src', products[id].img)
     $('.fa-arrow-right').attr('data-id', id)
@@ -162,39 +159,35 @@ function imgProject(indexs) {
     $('#exampleModalFullscreenLabel').text(projects[indexs].name)
 }
 
-$('#project-right').on('click', function () {
+function project_right() {
     indexProject++;
     if (indexProject == products.length) {
         indexProject = 0;
     }
-    console.log(indexProject)
     $('#img-project').attr('src', projects[indexProject].img)
     $('#exampleModalFullscreenLabel').text(projects[indexProject].name)
-})
+}
 
-$('#project-left').on('click', function () {
+function project_lift() {
     indexProject--;
     if (indexProject < 0) {
         indexProject = projects.length - 1;
     }
     $('#img-project').attr('src', projects[indexProject].img)
     $('#exampleModalFullscreenLabel').text(projects[indexProject].name)
-})
+}
 
 
 
-
-
-var mybutton = document.getElementById("myBtn");
 
 // When the user scrolls down 20px from the top of the document, show the button
 window.onscroll = function () { scrollFunction() };
 
 function scrollFunction() {
     if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
-        mybutton.style.display = "block";
+        $(".myBtn").css("display", "block");
     } else {
-        mybutton.style.display = "none";
+        $(".myBtn").css("display", "none");
     }
 }
 
@@ -204,6 +197,25 @@ function topFunction() {
     document.documentElement.scrollTop = 0;
 }
 
+
+
+
+// var allProjects = '';
+// for (var i = 0; i < projects.length; i++) {
+//     allProjects += `  <div class="content col-md-3">
+//     <div class="grid ">
+//         <figure class="effect-goliath">
+//             <img src="${projects[i].img}" alt="img24" />
+//             <figcaption>
+//                 <h2 class="w-100">${projects[i].name} <br><span>project</span></h2>
+//                 <p class=" w-100"><a href="project.html?id=${i}" class="eyes"><i class="fa fa-eye text-white"></i></a>
+//                     <a class="shows" data-bs-toggle="modal" onclick="imgProject(${i})" data-bs-target="#exampleModalFullscreen"><i class="fa fa-arrows-alt text-white"></i></a></p>
+//             </figcaption>
+//         </figure>
+//     </div>
+// </div>`;
+// }
+// document.getElementById('all-projects').innerHTML = allProjects;
 
 
 

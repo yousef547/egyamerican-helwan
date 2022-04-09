@@ -72,46 +72,28 @@
         </div>
     </nav>
 
-    <div class=" one-product">
+    <div class=" product-line">
         <div class="over-lay2 py-5">
             <div class="container py-5 my-5">
-                <h1 class="text-white fs-4rm" id="title-product"></h1>
-                <p class="py-3 text-white"><i class="fa fa-home text-red2"></i> // <a>PORTFOLIO</a> // <span
-                        id="title">INTERLOCK PARQUET (RECTANGLE)</span></p>
+                <h1 class="text-white fs-4rm">FACTORY VIDEOS
+                </h1>
+                <p class="py-3 text-white"><i class="fa fa-home text-red2"></i> // FACTORY VIDEOS</p>
             </div>
         </div>
         <!-- <img src="assets/images/b-3.jpg" class="h-350 w-100" alt="" srcset=""> -->
     </div>
 
-
-    <div class="navigation-wrap">
-        <div class="container my-5">
-            <div class="d-flex justify-content-center">
-                <div class="border p-4 me-1" id="left">
-                    <a href=""><i class="fa fa-angle-left"></i></a>
-                </div>
-                <div class="border p-4  me-1">
-                    <a href="index.html">
-                        <i class="fa fa-th"></i>
-                    </a>
-                </div>
-                <div class="border p-4" id="right">
-                    <a href=""><i class="fa fa-angle-right"></i></a>
-                </div>
-
-            </div>
-            <div class="d-flex text-center mt-5 flex-column">
-                <h2 id="title2"></h2>
-                <p class="text-muted fs-3">IN <span id="class-product" class="color-red"></span> <span class="color-red"> PROJECT </span></p>
-            </div>
-            <div class="row">
-                <div class="col-md-4">
-                    <img src="" id="proudct" class="w-100" alt="">
-                </div>
+    <div class="factory-photo my-5 ">
+        <div class="container">
+            <h2>EGYPTIAN AMERICAN CO HELWAN</h2>
+            <div class="w-100 mt-3">
+                <iframe width="100%" height="500" src="https://www.youtube.com/embed/KWpvRpdh0QY"
+                    title="YouTube video player" frameborder="0"
+                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                    allowfullscreen></iframe>
             </div>
         </div>
     </div>
-
 
     <div class="footer mt-5">
         <div class="w-100 over-lay-black">
@@ -178,15 +160,16 @@
             </div>
         </div>
     </div>
+
     <button onclick="topFunction()" class="myBtn" title="Go to top"><i
         class="fa-solid fa-arrow-up p-2 text-dark"></i></button>
+
     <script href="https://unpkg.com/@popperjs/core@2"></script>
     <script src="assets/js/bootstrap.js"></script>
     <script src="assets/js/jquery.js"></script>
-    <script src="assets/js/index.js" type="module"></script>
-    <script src="assets/js/product.js" type="module"></script>
+    <script src="assets/js/index.js" ></script>
     <script>
-         var pageIds = localStorage.getItem("namePage");
+ var pageIds = localStorage.getItem("namePage");
         $("#" + pageIds).addClass('activetion').siblings().removeClass('activetion');
         window.onscroll = function () { scrollFunction() };
 

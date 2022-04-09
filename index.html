@@ -22,7 +22,8 @@
     <!-- navbar -->
     <nav class="navbar navbar-expand-lg navbar-light bg-light">
         <div class="container">
-            <a class="navbar-brand" href="index.html"><img src="assets/images/logo.png" class="img-logo" alt="" srcset=""></a>
+            <a class="navbar-brand" href="index.html"><img src="assets/images/logo.png" class="img-logo" alt=""
+                    srcset=""></a>
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
                 data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
                 aria-label="Toggle navigation">
@@ -51,20 +52,20 @@
                             FACTORY
                         </a>
                         <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
-                            <li><a class="dropdown-item" href="#">PRODUCTION LINES</a></li>
-                            <li><a class="dropdown-item" href="#">Production capacity</a></li>
-                            <li><a class="dropdown-item" href="#">Factory photos</a></li>
-                            <li><a class="dropdown-item" href="#">Factory videos</a></li>
+                            <li><a class="dropdown-item" href="productline.html">PRODUCTION LINES</a></li>
+                            <li><a class="dropdown-item" href="producation.html">Production capacity</a></li>
+                            <li><a class="dropdown-item" href="factory-photo.html">Factory photos</a></li>
+                            <li><a class="dropdown-item" href="factory-video.html">Factory videos</a></li>
                         </ul>
                     </li>
                     <li class="nav-item" id="nav-project">
-                        <a class="nav-link" href="#">PROJECTS</a>
+                        <a class="nav-link" href="allprojects.html">PROJECTS</a>
                     </li>
                     <li class="nav-item" id="nav-client">
-                        <a class="nav-link ">CLIENTS</a>
+                        <a class="nav-link " href="client.html">CLIENTS</a>
                     </li>
                     <li class="nav-item" id="nav-contact">
-                        <a class="nav-link ">CONTACT US </a>
+                        <a class="nav-link " href="contact.html">CONTACT US </a>
                     </li>
                 </ul>
                 <!-- <form class="d-flex">
@@ -214,7 +215,7 @@
 
 
 
-     <div class="clints mb-5">
+    <div class="clints mb-5">
         <div class="container">
             <div class="text-center pt-5 scope-title">
                 <h2 class="fs-1">OUR CLIENTS</h2>
@@ -249,7 +250,7 @@
                 </div>
             </div>
         </div>
-    </div> 
+    </div>
 
 
     <div class="footer mt-5">
@@ -269,7 +270,7 @@
                 </div>
                 <div class="row text-muted fst-normal">
                     <div class="col-md-3">
-                        <h5 >Get in touch</h5>
+                        <h5>Get in touch</h5>
                         <ul class="p-0">
                             <li><i class="fa fa-map-marker"></i>Industrial Zone in Arab Mossad – El Saaf</li>
                             <li><i class="fa-solid fa-envelope"></i> info@egyamerican-helwan.com</li>
@@ -290,7 +291,7 @@
                         <h5>Company’s Policy</h5>
                         <ul class="p-0 arr">
                             <li><a>Terms of Use</a></li>
-                            <li><a>Privacy Policy</a</li>
+                            <li><a>Privacy Policy</a< /li>
                             <li><a>Site Map</a></li>
 
                         </ul>
@@ -307,19 +308,20 @@
 
                         </ul>
                     </div>
-                   
-                    
-                   
+
+
+
                 </div>
                 <hr>
-                <p class="text-white border-top py-5 text-muted">© 2020 THE EGYPTIAN AMERICAN CO. <span class="fw-bold text-white">HELWAN</span></p>
+                <p class="text-white border-top py-5 text-muted">© 2020 THE EGYPTIAN AMERICAN CO. <span
+                        class="fw-bold text-white">HELWAN</span></p>
             </div>
         </div>
     </div>
 
 
     <!-- Modal -->
-    <button onclick="topFunction()" id="myBtn" title="Go to top"><i
+    <button onclick="topFunction()" class="myBtn" title="Go to top"><i
             class="fa-solid fa-arrow-up p-2 text-dark"></i></button>
 
     <div class="modal fade" id="exampleModalFullscreen" tabindex="-1" aria-labelledby="exampleModalFullscreenLabel"
@@ -332,12 +334,12 @@
                 </div>
                 <div class="modal-body d-flex">
                     <a class=" arrow me-5">
-                        <i class="fa-solid fa-arrow-left border rounded-circle p-2 text-dark" id="project-left"
+                        <i class="fa-solid fa-arrow-left border rounded-circle p-2 text-dark" onclick="project_lift()"
                             data-id="1"></i>
                     </a>
                     <div class="w-100"><img src="" class="w-100 h-100" id="img-project" alt="" srcset=""></div>
                     <a class=" arrow ms-5">
-                        <i class="fa-solid fa-arrow-right border rounded-circle p-2 text-dark" id="project-right"
+                        <i class="fa-solid fa-arrow-right border rounded-circle p-2 text-dark" onclick="project_right()"
                             data-id="1"></i>
                     </a>
                 </div>
@@ -387,6 +389,8 @@
     <script src="assets/js/index.js"></script>
 
     <script type="text/javascript">
+        var pageIds = localStorage.getItem("namePage");
+        $("#" + pageIds).addClass('activetion').siblings().removeClass('activetion');
         $(".center").slick({
             dots: true,
             infinite: true,

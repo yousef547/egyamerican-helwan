@@ -18,7 +18,8 @@
     <!-- navbar -->
     <nav class="navbar navbar-expand-lg navbar-light bg-light">
         <div class="container">
-            <a class="navbar-brand" href="index.html"><img src="assets/images/logo.png" class="img-logo" alt="" srcset=""></a>
+            <a class="navbar-brand" href="index.html"><img src="assets/images/logo.png" class="img-logo" alt=""
+                    srcset=""></a>
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
                 data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
                 aria-label="Toggle navigation">
@@ -47,20 +48,20 @@
                             FACTORY
                         </a>
                         <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
-                            <li><a class="dropdown-item" href="#">PRODUCTION LINES</a></li>
-                            <li><a class="dropdown-item" href="#">Production capacity</a></li>
-                            <li><a class="dropdown-item" href="#">Factory photos</a></li>
-                            <li><a class="dropdown-item" href="#">Factory videos</a></li>
+                            <li><a class="dropdown-item" href="productline.html">PRODUCTION LINES</a></li>
+                            <li><a class="dropdown-item" href="producation.html">Production capacity</a></li>
+                            <li><a class="dropdown-item" href="factory-photo.html">Factory photos</a></li>
+                            <li><a class="dropdown-item" href="factory-video.html">Factory videos</a></li>
                         </ul>
                     </li>
                     <li class="nav-item" id="nav-project">
-                        <a class="nav-link" href="#">PROJECTS</a>
+                        <a class="nav-link" href="allprojects.html">PROJECTS</a>
                     </li>
                     <li class="nav-item" id="nav-client">
-                        <a class="nav-link ">CLIENTS</a>
+                        <a class="nav-link " href="client.html">CLIENTS</a>
                     </li>
                     <li class="nav-item" id="nav-contact">
-                        <a class="nav-link ">CONTACT US </a>
+                        <a class="nav-link " href="contact.html">CONTACT US </a>
                     </li>
                 </ul>
                 <!-- <form class="d-flex">
@@ -70,7 +71,6 @@
             </div>
         </div>
     </nav>
-
 
 
 
@@ -183,11 +183,19 @@
         </div>
     </div>
 
+
+    <button onclick="topFunction()" class="myBtn" title="Go to top"><i
+        class="fa-solid fa-arrow-up p-2 text-dark"></i></button>
+
     <script href="https://unpkg.com/@popperjs/core@2"></script>
     <script src="assets/js/bootstrap.js"></script>
     <script src="assets/js/jquery.js"></script>
-    <script src="assets/js/index.js" type="module"></script>
+    <script src="assets/js/index.js" ></script>
     <script>
+        var pageIds = localStorage.getItem("namePage");
+        $("#" + pageIds).addClass('activetion').siblings().removeClass('activetion');
+        window.onscroll = function () { scrollFunction() };
+
 
         let url_str = window.location.href;
         let url = new URL(url_str);
@@ -201,10 +209,10 @@
             }
 
         }
-     
-     function loads(){
-         $('.shuffle-images .content').css('display', 'none')
-         $('.' + nameProduct).parent().css('display', 'block');
+
+        function loads() {
+            $('.shuffle-images .content').css('display', 'none')
+            $('.' + nameProduct).parent().css('display', 'block');
         }
 
         // console.log(nameProduct);

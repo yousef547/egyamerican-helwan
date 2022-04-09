@@ -72,46 +72,61 @@
         </div>
     </nav>
 
-    <div class=" one-product">
-        <div class="over-lay2 py-5">
-            <div class="container py-5 my-5">
-                <h1 class="text-white fs-4rm" id="title-product"></h1>
-                <p class="py-3 text-white"><i class="fa fa-home text-red2"></i> // <a>PORTFOLIO</a> // <span
-                        id="title">INTERLOCK PARQUET (RECTANGLE)</span></p>
+
+    <div class=" contact-us">
+        <div class="imgs">
+            <div class="over-lay2 py-5">
+                <div class="container py-5 my-5">
+                    <h1 class="text-white fs-4rm">
+                        GET IN TOUCH
+                    </h1>
+                    <p class="py-3 text-white"><i class="fa fa-home text-red2"></i> // CONTACT US</p>
+                </div>
             </div>
         </div>
         <!-- <img src="assets/images/b-3.jpg" class="h-350 w-100" alt="" srcset=""> -->
     </div>
 
 
-    <div class="navigation-wrap">
-        <div class="container my-5">
-            <div class="d-flex justify-content-center">
-                <div class="border p-4 me-1" id="left">
-                    <a href=""><i class="fa fa-angle-left"></i></a>
-                </div>
-                <div class="border p-4  me-1">
-                    <a href="index.html">
-                        <i class="fa fa-th"></i>
-                    </a>
-                </div>
-                <div class="border p-4" id="right">
-                    <a href=""><i class="fa fa-angle-right"></i></a>
-                </div>
-
-            </div>
-            <div class="d-flex text-center mt-5 flex-column">
-                <h2 id="title2"></h2>
-                <p class="text-muted fs-3">IN <span id="class-product" class="color-red"></span> <span class="color-red"> PROJECT </span></p>
-            </div>
-            <div class="row">
+    <div class="contacts my-5 py-5">
+        <div class="container">
+            <div class="row my-5">
                 <div class="col-md-4">
-                    <img src="" id="proudct" class="w-100" alt="">
+                    <div class="text-center">
+                        <div class="icons text-white m-auto"><i class="fa fa-road fa-3x"></i></div>
+                        <h4 class="my-4">
+                            ADDRESS
+                        </h4>
+                        <p class="text-muted">Industrial Zone in Arab Mossad – El Saaf</p>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="text-center">
+                        <div class="icons text-white m-auto"><i class="fa fa-phone fa-3x"></i></div>
+                        <h4 class="my-4">
+                            PHONE NUMBERS
+                        </h4>
+                        <p class="text-muted">002- 01062628100</p>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="text-center">
+                        <div class="icons text-white m-auto"><i class="fa fa-envelope fa-3x"></i></div>
+                        <h4 class="my-4">
+                            E-MAIL
+                        </h4>
+                        <p class="text-muted">info@egyamerican-helwan.com</p>
+                    </div>
                 </div>
             </div>
         </div>
     </div>
-
+    <div class="map">
+        <iframe class="w-100"
+            src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d13855.781119983543!2d31.3171512!3d29.7502968!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x1459cb26cada0cc5%3A0x730b5a2a73bf568c!2z2LnYsdioINij2KjZiCDYs9in2LnYr9iMINin2YTZhdmG2YrYp9iMINin2YTYtdmB2Iwg2KfZhNis2YrYstip!5e0!3m2!1sar!2seg!4v1591613828318!5m2!1sar!2seg"
+            width="600" height="540" frameborder="0" style="border: 0px; pointer-events: none;" allowfullscreen=""
+            aria-hidden="false" tabindex="0"></iframe>
+    </div>
 
     <div class="footer mt-5">
         <div class="w-100 over-lay-black">
@@ -178,15 +193,16 @@
             </div>
         </div>
     </div>
-    <button onclick="topFunction()" class="myBtn" title="Go to top"><i
-        class="fa-solid fa-arrow-up p-2 text-dark"></i></button>
+    <button onclick="topFunction()" class="myBtn"><i class="fa-solid fa-arrow-up p-2 text-dark"></i></button>
+
+
     <script href="https://unpkg.com/@popperjs/core@2"></script>
     <script src="assets/js/bootstrap.js"></script>
     <script src="assets/js/jquery.js"></script>
-    <script src="assets/js/index.js" type="module"></script>
-    <script src="assets/js/product.js" type="module"></script>
+    <script src="assets/js/index.js"></script>
     <script>
-         var pageIds = localStorage.getItem("namePage");
+
+        var pageIds = localStorage.getItem("namePage");
         $("#" + pageIds).addClass('activetion').siblings().removeClass('activetion');
         window.onscroll = function () { scrollFunction() };
 

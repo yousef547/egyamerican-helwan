@@ -72,46 +72,71 @@
         </div>
     </nav>
 
-    <div class=" one-product">
+    <div class=" product-line">
         <div class="over-lay2 py-5">
             <div class="container py-5 my-5">
-                <h1 class="text-white fs-4rm" id="title-product"></h1>
-                <p class="py-3 text-white"><i class="fa fa-home text-red2"></i> // <a>PORTFOLIO</a> // <span
-                        id="title">INTERLOCK PARQUET (RECTANGLE)</span></p>
+                <h1 class="text-white fs-4rm">PRODUCTION CAPACITY
+                </h1>
+                <p class="py-3 text-white"><i class="fa fa-home text-red2"></i> // PRODUCTION CAPACITY</p>
             </div>
         </div>
         <!-- <img src="assets/images/b-3.jpg" class="h-350 w-100" alt="" srcset=""> -->
     </div>
 
-
-    <div class="navigation-wrap">
-        <div class="container my-5">
-            <div class="d-flex justify-content-center">
-                <div class="border p-4 me-1" id="left">
-                    <a href=""><i class="fa fa-angle-left"></i></a>
+    <div class="production my-5 pt-5">
+        <div class="container">
+            <div class="row justify-content-between">
+                <div class="col-md-3">
+                    <img src="assets/images/producation-1.jpg" class="w-100 h-100" alt="" srcset="">
                 </div>
-                <div class="border p-4  me-1">
-                    <a href="index.html">
-                        <i class="fa fa-th"></i>
-                    </a>
+                <div class="col-md-3">
+                    <img class="w-100 h-100" src="assets/images/producation-2.jpg" alt="" srcset="">
                 </div>
-                <div class="border p-4" id="right">
-                    <a href=""><i class="fa fa-angle-right"></i></a>
+                <div class="col-md-3">
+                    <img class="w-100 h-100" src="assets/images/producation-3.jpg" alt="" srcset="">
                 </div>
-
             </div>
-            <div class="d-flex text-center mt-5 flex-column">
-                <h2 id="title2"></h2>
-                <p class="text-muted fs-3">IN <span id="class-product" class="color-red"></span> <span class="color-red"> PROJECT </span></p>
+            <div class="text-center pt-5 scope-title">
+                <h2 class="fs-1">THE FACTORY WAS ESTABLISHED IN 2000 ON AN AREA OF 63000 M2.</h2>
+                <p class="text-secondary">(SEVEN THOUSAND METERS OF INTERLOCK AND TWO HUNDRED THOUSAND BRICKS AND FORTY
+                    THOUSAND BLOCKS) DAILY.</p>
             </div>
-            <div class="row">
-                <div class="col-md-4">
-                    <img src="" id="proudct" class="w-100" alt="">
-                </div>
+            <div class="text-center pt-5 scope-title">
+                <h2 class="fs-1">HOLLOW CONCRETE BLOCKS SIZE 20 X 20 X 40 CM</h2>
+                <p class="text-secondary">NUMBER OF PRODUCTION LINES: 2 PRODUCTIVITY / DAY: 24,000 BLOCKS.</p>
+            </div>
+            <div class="text-center pt-5 scope-title">
+                <h2 class="fs-1">HOLLOW CONCRETE BLOCKS SIZE 12 X 20 X 40 CM</h2>
+                <p class="text-secondary">NUMBER OF PRODUCTION LINES: 2 PRODUCTIVITY / DAY: 36,000 BLOCKS</p>
+            </div>
+
+            <div class="text-center pt-5 scope-title">
+                <h2 class="fs-1">CEMENT BRICKS</h2>
+                <p class="text-secondary">NUMBER OF PRODUCTION LINES: 3 PRODUCTIVITY / DAY: 130,000 BRICKS</p>
+            </div>
+
+            <div class="text-center pt-5 scope-title">
+                <h2 class="fs-1">SOFT INTERLOCK (HARDSTONE)</h2>
+                <p class="text-secondary">NUMBER OF PRODUCTION LINES: 1 PRODUCTIVITY / DAY: 600M2</p>
+            </div>
+
+            <div class="text-center pt-5 scope-title">
+                <h2 class="fs-1">THE CURBS</h2>
+                <p class="text-secondary">NUMBER OF PRODUCTION LINES: 2 PRODUCTIVITY / DAY: 6,000 MT</p>
+            </div>
+
+
+            <div class="text-center pt-5 scope-title">
+                <h2 class="fs-1">INTERLOCK TILES</h2>
+                <p class="text-secondary">NUMBER OF PRODUCTION LINES: 2 PRODUCTIVITY / DAY: 1,600 M 2</p>
+            </div>
+
+            <div class="text-center pt-5 scope-title">
+                <h2 class="fs-1">HOLLOW CONCRETE BLOCKS SIZE 25 X 20 X 40 CM</h2>
+                <p class="text-secondary">NUMBER OF PRODUCTION LINES: 2 PRODUCTIVITY / DAY: 18,000 BLOCKS</p>
             </div>
         </div>
     </div>
-
 
     <div class="footer mt-5">
         <div class="w-100 over-lay-black">
@@ -178,15 +203,18 @@
             </div>
         </div>
     </div>
+
+
     <button onclick="topFunction()" class="myBtn" title="Go to top"><i
         class="fa-solid fa-arrow-up p-2 text-dark"></i></button>
+
+
     <script href="https://unpkg.com/@popperjs/core@2"></script>
     <script src="assets/js/bootstrap.js"></script>
     <script src="assets/js/jquery.js"></script>
-    <script src="assets/js/index.js" type="module"></script>
-    <script src="assets/js/product.js" type="module"></script>
+    <script src="assets/js/index.js" ></script>
     <script>
-         var pageIds = localStorage.getItem("namePage");
+ var pageIds = localStorage.getItem("namePage");
         $("#" + pageIds).addClass('activetion').siblings().removeClass('activetion');
         window.onscroll = function () { scrollFunction() };
 

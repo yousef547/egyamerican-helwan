@@ -72,41 +72,73 @@
         </div>
     </nav>
 
-    <div class=" one-product">
+    <div class=" product-line">
         <div class="over-lay2 py-5">
             <div class="container py-5 my-5">
-                <h1 class="text-white fs-4rm" id="title-product"></h1>
-                <p class="py-3 text-white"><i class="fa fa-home text-red2"></i> // <a>PORTFOLIO</a> // <span
-                        id="title">INTERLOCK PARQUET (RECTANGLE)</span></p>
+                <h1 class="text-white fs-4rm">PRODUCTION LINES
+                    PRODUCTION LINES</h1>
+                <p class="py-3 text-white"><i class="fa fa-home text-red2"></i> // PRODUCTION LINES</p>
             </div>
         </div>
         <!-- <img src="assets/images/b-3.jpg" class="h-350 w-100" alt="" srcset=""> -->
     </div>
 
-
-    <div class="navigation-wrap">
-        <div class="container my-5">
-            <div class="d-flex justify-content-center">
-                <div class="border p-4 me-1" id="left">
-                    <a href=""><i class="fa fa-angle-left"></i></a>
-                </div>
-                <div class="border p-4  me-1">
-                    <a href="index.html">
-                        <i class="fa fa-th"></i>
-                    </a>
-                </div>
-                <div class="border p-4" id="right">
-                    <a href=""><i class="fa fa-angle-right"></i></a>
-                </div>
-
-            </div>
-            <div class="d-flex text-center mt-5 flex-column">
-                <h2 id="title2"></h2>
-                <p class="text-muted fs-3">IN <span id="class-product" class="color-red"></span> <span class="color-red"> PROJECT </span></p>
-            </div>
+    <div class="productline">
+        <div class="text-center pt-5 scope-title">
+            <h2 class="fs-1">PRODUCTION LINES</h2>
+            <p class="text-secondary">WE HAVE MANY TURKISH-MADE PRODUCTION LINES AVAILABLE.</p>
+        </div>
+        <div class="container">
             <div class="row">
                 <div class="col-md-4">
-                    <img src="" id="proudct" class="w-100" alt="">
+                    <div>
+                        <ul class="lines">
+                            <li id="line-1" class=" tabs-active">Coarse interlock production line</li>
+                            <li id="line-2">Garden curbers production line</li>
+                            <li id="line-3">Medium boiler production line</li>
+                            <li id="line-4">Al-Ajali's cakes production line</li>
+                            <li id="line-5">Decorative mesh production line (ant nest)</li>
+                            <li id="line-6">Solid brick production line </li>
+                            <li id="line-7">Hollow Block Brick Production Line</li>
+
+                        </ul>
+                    </div>
+                </div>
+                <div class="col-md-8 text-line">
+                    <div>
+                        <span class="line-1">
+                            <h2>with vibrating and vibrating machines and processing units to produce high quality
+                                product</h2>
+                        </span>
+                        <span class="line-2 d-none">
+                            <h2> vibrating and vibrating machines and processing units to produce high quality product
+                            </h2>
+                        </span>
+                        <span class="line-3 d-none">
+                            <h2>with vibrating and vibrating machines and processing units to produce high quality
+                                product</h2>
+                        </span>
+                        <span class="line-4 d-none">
+                            <h2>with vibrating and vibrating machines and processing units to produce high quality
+                                product</h2>
+                        </span>
+                        <span class="line-5 d-none">
+                            <h2>with vibrating and vibrating machines and processing units to produce high quality
+                                product</h2>
+                        </span>
+                        <span class="line-6 d-none">
+                            <h2>with vibrating and vibrating machines and processing units to produce high quality
+                                product</h2>
+                        </span>
+                        <span class="line-7 d-none">
+                            <h2>with vibrating and vibrating machines and processing units to produce high quality
+                                product</h2>
+                        </span>
+                    </div>
+                    <div class="d-flex justify-content-between mt-5">
+                        <a id="prevline">Previous tab</a>
+                        <a id="nextline">Next tab</a>
+                    </div>
                 </div>
             </div>
         </div>
@@ -179,17 +211,28 @@
         </div>
     </div>
     <button onclick="topFunction()" class="myBtn" title="Go to top"><i
-        class="fa-solid fa-arrow-up p-2 text-dark"></i></button>
+            class="fa-solid fa-arrow-up p-2 text-dark"></i></button>
     <script href="https://unpkg.com/@popperjs/core@2"></script>
     <script src="assets/js/bootstrap.js"></script>
     <script src="assets/js/jquery.js"></script>
-    <script src="assets/js/index.js" type="module"></script>
-    <script src="assets/js/product.js" type="module"></script>
+    <script src="assets/js/index.js" ></script>
     <script>
-         var pageIds = localStorage.getItem("namePage");
+        var pageIds = localStorage.getItem("namePage");
         $("#" + pageIds).addClass('activetion').siblings().removeClass('activetion');
         window.onscroll = function () { scrollFunction() };
 
+        $('.lines li').on('click', function () {
+            $(this).addClass('tabs-active').siblings().removeClass('tabs-active');
+            $('.' + this.id).removeClass('d-none').siblings().addClass('d-none')
+        })
+        $('#nextline').on('click', function () {
+            $('.tabs-active').next().addClass('tabs-active').siblings().removeClass('tabs-active');
+            $('.' + $('.tabs-active').attr('id')).removeClass('d-none').siblings().addClass('d-none')
+        })
+        $('#prevline').on('click', function () {
+            $('.tabs-active').prev().addClass('tabs-active').siblings().removeClass('tabs-active')
+            $('.' + $('.tabs-active').attr('id')).removeClass('d-none').siblings().addClass('d-none')
+        })
     </script>
 </body>
 
