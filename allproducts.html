@@ -1,0 +1,217 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="assets/css/bootstrap.min.css">
+    <link rel="stylesheet" href="assets/css/all.min.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Oswald&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="assets/css/style.css">
+</head>
+
+<body onload="loads()">
+    <!-- navbar -->
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+        <div class="container">
+            <a class="navbar-brand" href="index.html"><img src="assets/images/logo.png" class="img-logo" alt="" srcset=""></a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+                aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav m-auto mb-2 mb-lg-0">
+                    <li class="nav-item activetion" id="nav-home">
+                        <a class="nav-link " aria-current="page" href="index.html">Home</a>
+                    </li>
+                    <li class="nav-item dropdown " id="nav-product">
+                        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button"
+                            data-bs-toggle="dropdown" aria-expanded="false">
+                            PRODUCTS
+                        </a>
+                        <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                            <li><a class="dropdown-item" href="allproducts.html?products=block">BLOCK</a></li>
+                            <li><a class="dropdown-item" href="allproducts.html?products=brick">BRICK</a></li>
+                            <li><a class="dropdown-item" href="allproducts.html?products=baradoura">BARADOURA</a></li>
+                            <li><a class="dropdown-item" href="allproducts.html?products=interlock">INTERLOCK</a></li>
+                        </ul>
+                    </li>
+                    <li class="nav-item dropdown" id="nav-factry">
+                        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button"
+                            data-bs-toggle="dropdown" aria-expanded="false">
+                            FACTORY
+                        </a>
+                        <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                            <li><a class="dropdown-item" href="#">PRODUCTION LINES</a></li>
+                            <li><a class="dropdown-item" href="#">Production capacity</a></li>
+                            <li><a class="dropdown-item" href="#">Factory photos</a></li>
+                            <li><a class="dropdown-item" href="#">Factory videos</a></li>
+                        </ul>
+                    </li>
+                    <li class="nav-item" id="nav-project">
+                        <a class="nav-link" href="#">PROJECTS</a>
+                    </li>
+                    <li class="nav-item" id="nav-client">
+                        <a class="nav-link ">CLIENTS</a>
+                    </li>
+                    <li class="nav-item" id="nav-contact">
+                        <a class="nav-link ">CONTACT US </a>
+                    </li>
+                </ul>
+                <!-- <form class="d-flex">
+                    <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+                    <button class="btn btn-outline-success" type="submit">Search</button>
+                </form> -->
+            </div>
+        </div>
+    </nav>
+
+
+
+
+
+
+
+
+
+
+
+
+    <div class=" one-product">
+        <div class="over-lay2 py-5">
+            <div class="container py-5 my-5">
+                <h1 class="text-white fs-4rm" id="project-name"></h1>
+                <p class="py-3 text-white"><i class="fa fa-home text-red2"></i> // <a>PORTFOLIO</a> // <span
+                        id="project-text">INTERLOCK PARQUET (RECTANGLE)</span></p>
+            </div>
+        </div>
+        <!-- <img src="assets/images/b-3.jpg" class="h-350 w-100" alt="" srcset=""> -->
+    </div>
+
+
+
+    <div class="featured text-center">
+        <div class="container-fluid">
+
+            <ul class="list-unstyled row justify-content-center listOfProducts">
+                <li data-class="all" class="active col-md-1">all</li>
+                <li data-class=".baradoura" class="col-md-1">BARADOURA</li>
+                <!-- baradoura -->
+                <li data-class=".block" class="col-md-1">BLOCK</li>
+                <li data-class=".brick" class="col-md-1">BRICK</li>
+                <li data-class=".interlock" class="col-md-1">INTERLOCK</li>
+                <li data-class=".vidoes" class="col-md-1">PRODUCTS</li>
+                <li data-class=".project" class="col-md-1">PROJECT</li>
+
+            </ul>
+        </div>
+        <div class="shuffle-images">
+            <div class="row" id="featured-product">
+            </div>
+        </div>
+    </div>
+
+
+    <div class="footer mt-5">
+        <div class="w-100 over-lay-black">
+            <div class="container">
+                <div class="d-flex justify-content-center flex-column align-items-center h-400">
+                    <div class="footer-logo text-center">
+                        <img src="assets/images/LOGOw.png" class="w-50" alt="" srcset="">
+                    </div>
+                    <div class="text-white">
+                        <p>
+                            Specialized in the manufacturing of cement products such as: (Bricks, Blocks, Interlock,<br>
+                            Baradoura). Main Branch Factory at Abu Rawash ,The factory was established in 2000<br> on an
+                            area of 63000 m2.
+                        </p>
+                    </div>
+                </div>
+                <div class="row text-muted fst-normal">
+                    <div class="col-md-3">
+                        <h5>Get in touch</h5>
+                        <ul class="p-0">
+                            <li><i class="fa fa-map-marker"></i>Industrial Zone in Arab Mossad – El Saaf</li>
+                            <li><i class="fa-solid fa-envelope"></i> info@egyamerican-helwan.com</li>
+                            <li><i class="fa fa-phone"></i>002- 01062628100</li>
+                            <li><i class="fa fa-globe"></i>Visit location</li>
+
+                        </ul>
+                    </div>
+                    <div class="col-md-3">
+                        <h5>Business Hours</h5>
+                        <ul class="p-0 ">
+                            <li>Saturday to Thursday: 8.30am to 5pm</li>
+                            <li>Friday: Closed</li>
+                            <li>Support Hours is 24/7 every day</li>
+                        </ul>
+                    </div>
+                    <div class="col-md-3">
+                        <h5>Company’s Policy</h5>
+                        <ul class="p-0 arr">
+                            <li><a>Terms of Use</a></li>
+                            <li><a>Privacy Policy</a< /li>
+                            <li><a>Site Map</a></li>
+
+                        </ul>
+                    </div>
+                    <div class="col-md-3">
+                        <h5>Hotline</h5>
+                        <ul class="p-0 icons-hotline">
+                            <li><i class="fa fa-phone"></i>002- 01062628100</li>
+                            <li class="">
+                                <a><i class="fa-brands fa-facebook-f"></i></a>
+                                <a><i class="fa-brands fa-youtube"></i></a>
+                                <a><i class="fa-brands fa-vk"></i></a>
+                            </li>
+
+                        </ul>
+                    </div>
+
+
+
+                </div>
+                <hr>
+                <p class="text-white border-top py-5 text-muted">© 2020 THE EGYPTIAN AMERICAN CO. <span
+                        class="fw-bold text-white">HELWAN</span></p>
+            </div>
+        </div>
+    </div>
+
+    <script href="https://unpkg.com/@popperjs/core@2"></script>
+    <script src="assets/js/bootstrap.js"></script>
+    <script src="assets/js/jquery.js"></script>
+    <script src="assets/js/index.js" type="module"></script>
+    <script>
+
+        let url_str = window.location.href;
+        let url = new URL(url_str);
+        let search_params = url.searchParams;
+        let nameProduct = search_params.get('products');
+        const article = $('.listOfProducts li');
+        // console.log('.' + nameProduct);
+        for (var i = 0; i < $(article).length; i++) {
+            if ($(article[i]).data('class') == `.${nameProduct}`) {
+                $(article[i]).addClass('active').siblings().removeClass('active');
+            }
+
+        }
+     
+     function loads(){
+         $('.shuffle-images .content').css('display', 'none')
+         $('.' + nameProduct).parent().css('display', 'block');
+        }
+
+        // console.log(nameProduct);
+
+
+
+    </script>
+</body>
+
+</html>

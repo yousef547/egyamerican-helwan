@@ -1,0 +1,430 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="assets/css/bootstrap.min.css">
+    <link rel="stylesheet" href="assets/css/all.min.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Oswald&display=swap" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="assets/slick-1.8.1/slick/slick.css" />
+    <!-- // Add the new slick-theme.css if you want the default styling -->
+    <link rel="stylesheet" type="text/css" href="assets/slick-1.8.1/slick/slick-theme.css" />
+    <link rel="stylesheet" href="assets/css/style.css">
+
+</head>
+
+<body>
+    <!-- navbar -->
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+        <div class="container">
+            <a class="navbar-brand" href="index.html"><img src="assets/images/logo.png" class="img-logo" alt="" srcset=""></a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+                aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav m-auto mb-2 mb-lg-0">
+                    <li class="nav-item activetion" id="nav-home">
+                        <a class="nav-link " aria-current="page" href="index.html">Home</a>
+                    </li>
+                    <li class="nav-item dropdown " id="nav-product">
+                        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button"
+                            data-bs-toggle="dropdown" aria-expanded="false">
+                            PRODUCTS
+                        </a>
+                        <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                            <li><a class="dropdown-item" href="allproducts.html?products=block">BLOCK</a></li>
+                            <li><a class="dropdown-item" href="allproducts.html?products=brick">BRICK</a></li>
+                            <li><a class="dropdown-item" href="allproducts.html?products=baradoura">BARADOURA</a></li>
+                            <li><a class="dropdown-item" href="allproducts.html?products=interlock">INTERLOCK</a></li>
+                        </ul>
+                    </li>
+                    <li class="nav-item dropdown" id="nav-factry">
+                        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button"
+                            data-bs-toggle="dropdown" aria-expanded="false">
+                            FACTORY
+                        </a>
+                        <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                            <li><a class="dropdown-item" href="#">PRODUCTION LINES</a></li>
+                            <li><a class="dropdown-item" href="#">Production capacity</a></li>
+                            <li><a class="dropdown-item" href="#">Factory photos</a></li>
+                            <li><a class="dropdown-item" href="#">Factory videos</a></li>
+                        </ul>
+                    </li>
+                    <li class="nav-item" id="nav-project">
+                        <a class="nav-link" href="#">PROJECTS</a>
+                    </li>
+                    <li class="nav-item" id="nav-client">
+                        <a class="nav-link ">CLIENTS</a>
+                    </li>
+                    <li class="nav-item" id="nav-contact">
+                        <a class="nav-link ">CONTACT US </a>
+                    </li>
+                </ul>
+                <!-- <form class="d-flex">
+                    <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+                    <button class="btn btn-outline-success" type="submit">Search</button>
+                </form> -->
+            </div>
+        </div>
+    </nav>
+
+
+    <!-- slider -->
+
+    <div id="carouselExampleControls" class="carousel slide" data-bs-ride="carousel">
+        <div class="carousel-inner">
+            <div class="carousel-item active">
+                <img src="assets/images/logo.png" class="d-block w-100" alt="...">
+            </div>
+            <div class="carousel-item">
+                <img src="assets/images/logo.png" class="d-block w-100" alt="...">
+            </div>
+            <div class="carousel-item">
+                <img src="assets/images/logo.png" class="d-block w-100" alt="...">
+            </div>
+        </div>
+        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleControls"
+            data-bs-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Previous</span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleControls"
+            data-bs-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Next</span>
+        </button>
+    </div>
+
+    <div class="my-5">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-3">
+                    <div class="img">
+                        <img src="assets/images/admin-ajax2-1.jpg" class="w-100 h-500" alt="" srcset="">
+                    </div>
+                </div>
+
+                <div class="col-md-3">
+                    <div class="img">
+                        <img src="assets/images/admin-ajax-2.jpg" class="w-100 mb-3" alt="" srcset="">
+                    </div>
+                    <div class="img">
+                        <img src="assets/images/admin-ajax2-1.jpg" class="w-100 " alt="" srcset="">
+                    </div>
+                </div>
+
+                <div class="col-md-6">
+                    <div>
+                        <div class="co-helwan d-flex">
+                            <div class="industry">
+                                <i class="fa-solid fa-industry fa-2x text-white"></i>
+                            </div>
+                            <h2>EGYPTIAN AMERICAN CO. HELWAN</h2>
+                        </div>
+                        <p class="mt-3 text-muted">Specialized in the manufacturing of cement products such as:(Bricks,
+                            Blocks, Interlock,
+                            Baradoura).<br>
+                            Main Branch Factory at Abu Rawash ,The factory was established in 2000 on an area of 63000
+                            m2.<br>
+                            (seven thousand meters of Interlock and two hundred thousand bricks and forty thousand
+                            blocks) daily</p>
+
+                        <h4 class="text-red">
+                            Our Value
+                        </h4>
+                        <div class="row mb-4">
+                            <div class="our-value my-3 col-md-6">
+                                <ul class="p-0">
+                                    <li>Customer Satisfaction</li>
+                                    <li>Preserving the environment</li>
+                                    <li>Training and developing employees</li>
+                                </ul>
+                            </div>
+                            <div class="our-value my-3 col-md-6 p-0">
+                                <ul class="p-0">
+                                    <li>Maintaining employee health and safety</li>
+                                    <li>Working with one team</li>
+                                    <li>Profit for the shareholders</li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div>
+                            <a class="btn btn-down border border-dark border-2 rounded-0 px-4">
+                                DOWNLOAD COMPANY PROFILE
+                            </a>
+                            <a class="btn btn-project text-white bg-red px-4 rounded-0 ms-2">
+                                VIEW OUR PROJECTS
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="scope my-5">
+        <div class="container">
+            <div class="text-center pt-5 scope-title">
+                <h2 class="fs-1">SCOPE OF WORK</h2>
+                <p class="text-secondary">EBRICKS, BLOCKS, INTERLOCK, BARADOURA</p>
+            </div>
+            <div class="row my-5" id="listOfProduct">
+
+            </div>
+        </div>
+    </div>
+
+
+
+
+
+
+    <div class="scope my-5">
+        <div class="container">
+            <div class="text-center pt-5 scope-title">
+                <h2 class="fs-1">LASTEST PROJECTS</h2>
+                <p class="text-secondary">EXPERIENCE & CREATIVITY HOUSE</p>
+            </div>
+            <div class="row" id="listOfprojects">
+                <div class="content col-md-3">
+                    <div class="grid ">
+                        <figure class="effect-goliath">
+                            <img src="assets/images/p1.jpg" alt="img24" />
+                            <figcaption>
+                                <h2 class="w-100">plams <br><span>project</span></h2>
+                                <a href="#">View more</a>
+                                <p class=" w-100"><a href="" class="eyes"><i class="fa fa-eye text-white"></i></a>
+                                    <a href="" class="shows"><i class="fa fa-arrows-alt text-white"></i></a>
+                                </p>
+                            </figcaption>
+                        </figure>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </div>
+
+
+
+     <div class="clints mb-5">
+        <div class="container">
+            <div class="text-center pt-5 scope-title">
+                <h2 class="fs-1">OUR CLIENTS</h2>
+                <p class="text-secondary">WE WORK CLOSELY WITH A WIDE RANGE OF CLIENTS FROM DIFFERENT SECTORS AND
+                    REGIONS ACROSS PUBLIC SECTOR, PRIVATE SECTOR AND LOCAL AND NATIONAL GOVERNMENTS.</p>
+            </div>
+            <div class="row center slider my-5">
+
+                <div class="col-md-3">
+                    <img src="assets/images/8.jpg" class="slider-img">
+                </div>
+                <div class="col-md-3">
+                    <img src="assets/images/7.jpg" class="slider-img">
+                </div>
+                <div class="col-md-3">
+                    <img src="assets/images/6.jpg" class="slider-img">
+                </div>
+                <div class="col-md-3">
+                    <img src="assets/images/5.jpg" class="slider-img">
+                </div>
+                <div class="col-md-3">
+                    <img src="assets/images/4.jpg" class="slider-img">
+                </div>
+                <div class="col-md-3">
+                    <img src="assets/images/3.jpg" class="slider-img">
+                </div>
+                <div class="col-md-3">
+                    <img src="assets/images/2.jpg" class="slider-img">
+                </div>
+                <div class="col-md-3">
+                    <img src="assets/images/1.jpg" class="slider-img">
+                </div>
+            </div>
+        </div>
+    </div> 
+
+
+    <div class="footer mt-5">
+        <div class="w-100 over-lay-black">
+            <div class="container">
+                <div class="d-flex justify-content-center flex-column align-items-center h-400">
+                    <div class="footer-logo text-center">
+                        <img src="assets/images/LOGOw.png" class="w-50" alt="" srcset="">
+                    </div>
+                    <div class="text-white">
+                        <p>
+                            Specialized in the manufacturing of cement products such as: (Bricks, Blocks, Interlock,<br>
+                            Baradoura). Main Branch Factory at Abu Rawash ,The factory was established in 2000<br> on an
+                            area of 63000 m2.
+                        </p>
+                    </div>
+                </div>
+                <div class="row text-muted fst-normal">
+                    <div class="col-md-3">
+                        <h5 >Get in touch</h5>
+                        <ul class="p-0">
+                            <li><i class="fa fa-map-marker"></i>Industrial Zone in Arab Mossad – El Saaf</li>
+                            <li><i class="fa-solid fa-envelope"></i> info@egyamerican-helwan.com</li>
+                            <li><i class="fa fa-phone"></i>002- 01062628100</li>
+                            <li><i class="fa fa-globe"></i>Visit location</li>
+
+                        </ul>
+                    </div>
+                    <div class="col-md-3">
+                        <h5>Business Hours</h5>
+                        <ul class="p-0 ">
+                            <li>Saturday to Thursday: 8.30am to 5pm</li>
+                            <li>Friday: Closed</li>
+                            <li>Support Hours is 24/7 every day</li>
+                        </ul>
+                    </div>
+                    <div class="col-md-3">
+                        <h5>Company’s Policy</h5>
+                        <ul class="p-0 arr">
+                            <li><a>Terms of Use</a></li>
+                            <li><a>Privacy Policy</a</li>
+                            <li><a>Site Map</a></li>
+
+                        </ul>
+                    </div>
+                    <div class="col-md-3">
+                        <h5>Hotline</h5>
+                        <ul class="p-0 icons-hotline">
+                            <li><i class="fa fa-phone"></i>002- 01062628100</li>
+                            <li class="">
+                                <a><i class="fa-brands fa-facebook-f"></i></a>
+                                <a><i class="fa-brands fa-youtube"></i></a>
+                                <a><i class="fa-brands fa-vk"></i></a>
+                            </li>
+
+                        </ul>
+                    </div>
+                   
+                    
+                   
+                </div>
+                <hr>
+                <p class="text-white border-top py-5 text-muted">© 2020 THE EGYPTIAN AMERICAN CO. <span class="fw-bold text-white">HELWAN</span></p>
+            </div>
+        </div>
+    </div>
+
+
+    <!-- Modal -->
+    <button onclick="topFunction()" id="myBtn" title="Go to top"><i
+            class="fa-solid fa-arrow-up p-2 text-dark"></i></button>
+
+    <div class="modal fade" id="exampleModalFullscreen" tabindex="-1" aria-labelledby="exampleModalFullscreenLabel"
+        style="display: none;" aria-hidden="true">
+        <div class="modal-dialog modal-fullscreen w-100">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title h4" id="exampleModalFullscreenLabel">Full screen modal</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body d-flex">
+                    <a class=" arrow me-5">
+                        <i class="fa-solid fa-arrow-left border rounded-circle p-2 text-dark" id="project-left"
+                            data-id="1"></i>
+                    </a>
+                    <div class="w-100"><img src="" class="w-100 h-100" id="img-project" alt="" srcset=""></div>
+                    <a class=" arrow ms-5">
+                        <i class="fa-solid fa-arrow-right border rounded-circle p-2 text-dark" id="project-right"
+                            data-id="1"></i>
+                    </a>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="exampleModalLabel"></h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body d-flex">
+                    <a class=" arrow">
+                        <i class="fa-solid fa-arrow-left border rounded-circle p-2 text-dark" id="left" data-id="1"
+                            onclick="perv()"></i>
+                    </a>
+                    <div>
+                        <img src="assets/images/1.jpg" id="show-img" class="w-100" alt="" srcset="">
+                    </div>
+                    <a class=" arrow">
+                        <i class="fa-solid fa-arrow-right border rounded-circle p-2 text-dark" id="right" data-id="1"
+                            onclick="next()"></i>
+                    </a>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+
+
+    <script href="https://unpkg.com/@popperjs/core@2"></script>
+    <script src="assets/js/bootstrap.js"></script>
+    <script src="assets/js/jquery.js"></script>
+    <script type="text/javascript" src="//code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
+    <script type="text/javascript" src="assets/slick-1.8.1/slick/slick.min.js"></script>
+
+    <script src="assets/js/index.js"></script>
+
+    <script type="text/javascript">
+        $(".center").slick({
+            dots: true,
+            infinite: true,
+            centerMode: true,
+            slidesToShow: 5,
+            autoplay: true,
+            slidesToScroll: 3,
+            responsive: [
+                {
+                    breakpoint: 1024,
+                    settings: {
+                        slidesToShow: 3,
+                        slidesToScroll: 3,
+                        infinite: true,
+                        dots: true
+                    }
+                },
+                {
+                    breakpoint: 600,
+                    settings: {
+                        slidesToShow: 2,
+                        slidesToScroll: 3
+                    }
+                },
+                {
+                    breakpoint: 480,
+                    settings: {
+                        slidesToShow: 1,
+                        slidesToScroll: 2
+                    }
+                }
+                // You can unslick at a given breakpoint now by adding:
+                // settings: "unslick"
+                // instead of a settings object
+            ]
+        });
+    </script>
+
+</body>
+
+</html>
